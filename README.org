@@ -1,0 +1,2 @@
+* Init minimum
+emacs -Q -l ~/.emacs.d/init-minimum.el
