@@ -320,8 +320,8 @@
 (use-package scala-mode :straight t)
 (use-package slime
   :straight t
-  :custom
-  (inferior-lisp-program "sbcl"))
+  :config
+  (setq inferior-lisp-program "sbcl"))
 (use-package typescript-mode :straight t)
 (use-package yaml-mode :straight t)
 (use-package zig-mode :straight t)

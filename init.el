@@ -23,7 +23,7 @@
    'init-text
    'init-sym
    'init-file
-   'init-buf
+   'init-buffer
    'init-modeline
    'init-shell
    'init-tabbar
@@ -33,13 +33,13 @@
    'init-complete
    'init-diff
    'init-highlight
-   'init-hx
+   'init-history
    'init-ime
    'init-modal
    'init-spell
    'init-vc
 
-   'init-proj
+   'init-project
    'init-doc
    'init-agenda
    'init-note

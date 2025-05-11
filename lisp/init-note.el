@@ -19,7 +19,7 @@
    '(("d" "default" entry
       "** %<%H:%M> %?"
       :target (file+head+olp "%<%Y-%m>.org"
-							 "#+TITLE: %<%B %Y>\n#+STARTUP: overview\n"
+							 "#+TITLE: %<%Y-%m>\n#+STARTUP: overview\n"
 							 ("%<%B %d, %Y>"))
       :jump-to-captured t)))
   :config
