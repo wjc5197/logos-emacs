@@ -115,7 +115,7 @@
      "\\*Kill Ring\\*"
 	 "\\*package update results\\*$"
      "\\*Package-Lint\\*$"
-     "\\*[Wo]*Man.*\\*$"
+     ;; "\\*[Wo]*Man.*\\*$"
      "\\*gud-debug\\*$"
      "\\*quickrun\\*$"
      "\\*vc-.*\\*$"

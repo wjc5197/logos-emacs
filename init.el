@@ -59,3 +59,4 @@
 (require 'server)
 (unless (server-running-p)
     (server-start))
+(put 'magit-clean 'disabled nil)

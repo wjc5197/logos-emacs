@@ -111,6 +111,7 @@
 	haskell-mode
 	java-mode
 	js-mode
+	lua-mode
 	nix-mode
 	python-mode
 	python-ts-mode
@@ -304,6 +305,7 @@
 
 (use-package clojure-mode :straight t)
 (use-package cmake-mode :straight t)
+(use-package dockerfile-mode :straight t)
 (use-package elisp-mode)
 ;; (use-package elisp-autofmt :straight t)
 (use-package gnu-apl-mode :straight t)
@@ -314,6 +316,7 @@
 (use-package json-mode :straight t)
 (use-package julia-mode :straight t)
 (use-package just-mode :straight t)
+(use-package lua-mode :straight t)
 (use-package nix-mode :straight t)
 (use-package racket-mode :straight t)
 (use-package rust-mode :straight t)
