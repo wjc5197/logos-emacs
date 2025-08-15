@@ -118,7 +118,7 @@
      ;; "\\*[Wo]*Man.*\\*$"
      "\\*gud-debug\\*$"
      "\\*quickrun\\*$"
-     "\\*vc-.*\\*$"
+     ;; "\\*vc-.*\\*$"
      "^\\*macro expansion\\**"
      "\\*Agenda Commands\\*"
      "\\*Org Select\\*"

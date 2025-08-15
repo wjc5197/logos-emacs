@@ -46,7 +46,7 @@
   "Return t if BUFFER is temporary."
   (string-match-p "^ " (buffer-name buffer)))
 
-(defun +reload-init-file ()
+(defun +load-init-file ()
   (interactive)
   (load user-init-file))
 

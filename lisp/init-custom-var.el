@@ -27,8 +27,8 @@
  org-roam-dailies-directory "journal"
  ;; org-journal-dir (expand-file-name "journal" org-roam-directory)
  org-agenda-dir (expand-file-name "agenda" org-roam-directory)
- org-download-image-dir (expand-file-name "img" org-roam-directory)
- org-media-note-screenshot-image-dir org-download-image-dir
+ ;; org-download-image-dir (expand-file-name "img" org-roam-directory)
+ ;; org-media-note-screenshot-image-dir org-download-image-dir
  ebib-default-directory +bib-dir
  citar-bibliography (file-expand-wildcards (expand-file-name "*.bib" +bib-dir))
  ;; citar-notes-paths (list (file-name-concat +blog-dir "orgs/paper-notes"))
@@ -40,7 +40,7 @@
  +desire-file (expand-file-name "desire.org" org-agenda-dir)
  +known-file (expand-file-name "known.org" org-agenda-dir)
  ;;	All crypt with the same key
- +crypt-key "WJC5197"
+ +crypt-key "wjc5197"
  +ob-lang '((emacs-lisp . t)
 			(haskell . t)
 			(latex . t)

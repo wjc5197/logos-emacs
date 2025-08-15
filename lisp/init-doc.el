@@ -32,7 +32,7 @@
    ("C-c o i" . org-toggle-inline-images)
    ("C-c o l" . org-latex-preview)
    ;; ("C-c o s" . +org-sort-buffer-alpha-ord)
-   ("C-c o y" . org-download-screenshot))
+   )
   :hook
   ((org-mode . org-indent-mode)
    (org-mode . org-latex-preview-auto-mode)
@@ -181,6 +181,7 @@
 (use-package
   org-download
   :straight t
+  :hook (org-mode . org-download-enable)
   :preface
   (defun delete-current-image-file ()
 	"Delete the file corresponding to the current image buffer and kill the buffer."
