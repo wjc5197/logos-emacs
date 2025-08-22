@@ -44,7 +44,7 @@
   ((prog-mode text-mode) . highlight-parentheses-mode))
  :custom
  ;; (highlight-parentheses-colors '("firebrick1" "firebrick3" "orange1" "orange3"))
- (highlight-parentheses-attributes '((:underline t) (:underline t) (:underline t)))
+ ;; (highlight-parentheses-attributes '((:underline t) (:underline t) (:underline t)))
  (highlight-parentheses-delay 0.2))
 
 ;; [rainbow-mode] Colorize color names in buffers

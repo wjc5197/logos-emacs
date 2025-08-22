@@ -81,9 +81,9 @@
   :custom
   (auto-dim-other-buffers-dim-on-focus-out nil)
   (auto-dim-other-buffers-dim-on-switch-to-minibuffer nil)
-  :config
-  (add-to-list 'auto-dim-other-buffers-affected-faces
-			   '(font-lock-comment-face . auto-dim-other-buffers-face))
+  ;; :config
+  ;; (add-to-list 'auto-dim-other-buffers-affected-faces
+  ;; 			   '(font-lock-comment-face . auto-dim-other-buffers-face))
   ;; (defadvice!
   ;;  +auto-dim-other-buffers-auto-set-face (&rest _)
   ;;  :after #'enable-theme
@@ -161,7 +161,9 @@
      ;;     (derived-mode-p 'compilation-mode)))
 	 )
    )
-  :custom (popper-mode-line '(:eval (propertize " POP " 'face 'mode-line-emphasis))))
+  :custom (popper-mode-line "")
+  ;; :custom (popper-mode-line '(:eval (propertize " POP " 'face 'mode-line-emphasis)))
+  )
 
 ;; (use-package
 ;;  popper

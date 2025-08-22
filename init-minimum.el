@@ -11,11 +11,12 @@
 
 (defvar +init-files
   (list
-   'init-custom-func
+   'init-custom-fn
    'init-custom-macro
    'init-custom-var
    'init-pacman
    'init-modal
+   'init-complete
    ))
 
 

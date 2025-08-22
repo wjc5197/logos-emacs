@@ -32,10 +32,6 @@
 	)
   )
 
-(defun +replace-chinese-punctuation-on-current-file ()
-  (interactive)
-  (+replace-chinese-punctuation-on-file buffer-file-name))
-
 (defun +call-fn-with-pp-to-prin1 (fn &rest args)
   "Call FN with ARGS, map `pp' to `prin1' when called."
   (cl-letf (((symbol-function #'pp) #'prin1)
@@ -45,6 +41,10 @@
 (defun +temp-buffer-p (buffer)
   "Return t if BUFFER is temporary."
   (string-match-p "^ " (buffer-name buffer)))
+
+(defun +font-installed-p (font-name)
+  "Check if font with font-name is available."
+  (find-font (font-spec :name font-name)))
 
 (defun +load-init-file ()
   (interactive)

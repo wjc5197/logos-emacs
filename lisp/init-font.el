@@ -12,10 +12,6 @@
  ;; text-scale-remap-header-line t
  )
 
-(defun +font-installed-p (font-name)
-  "Check if font with font-name is available."
-  (find-font (font-spec :name font-name)))
-
 (when (display-graphic-p)
   (cl-loop
    for font in

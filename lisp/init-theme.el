@@ -29,6 +29,7 @@
   :straight t
   :init (load-theme 'spacemacs-dark t)
   :custom
+  (spacemacs-theme-comment-bg nil)
   (spacemacs-theme-custom-colors
    `((base . ,+light-grey)
      (bg1 . ,+default-black)
@@ -48,7 +49,9 @@
      (mat . ,+apricot)
      (meta . ,+snow-white)
      (var . ,+light-apricot)
-	 ))
+	 )
+   )
+  (spacemacs-theme-underline-parens nil)
   :config
   (custom-set-faces
    `(ansi-color-bright-blue ((t (:foreground ,+baby-blue :background ,+baby-blue))))
@@ -60,7 +63,7 @@
    '(markdown-code-face ((t (:inherit unspecified))))
    `(mode-line ((t (:background ,+onyx))))
    `(mode-line-inactive ((t (:background ,+inactive-black :box nil))))
-   `(show-paren-match ((t (:foreground ,+golden :underline t :weight ultra-bold))))
+   `(show-paren-match ((t (:foreground ,+golden :weight ultra-bold))))
    `(tab-bar ((t (:background ,+dark-lavender))))
    '(tab-bar-tab ((t (:inherit mode-line))))
    '(tab-bar-tab-inactive ((t (:inherit mode-line-inactive))))

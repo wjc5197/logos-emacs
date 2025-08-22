@@ -85,8 +85,8 @@
      ;; ("" "esint")
      ;; ("" "esvect")
      ;; ("" "geometry")
-     ("" "xcolor")
      ;; ("" "mathtools")
+     ("" "xcolor")
 	 )
    )
   (org-latex-preview-preamble
