@@ -132,20 +132,20 @@
    ("M-/" . eglot-find-typeDefinition))
   :preface
   (defun +jdtls-command-contact (&optional interactive)
-  (let* ((jdtls-cache-dir (file-name-concat user-emacs-directory ".cache" "lsp-cache"))
-         (project-dir (file-name-nondirectory (directory-file-name (project-root (project-current)))))
-         (data-dir (expand-file-name (file-name-concat jdtls-cache-dir (md5 project-dir))))
-         (jvm-args `("-Xmx8G"
-                     ;; "-XX:+UseG1GC"
-                     "-XX:+UseZGC"
-                     "-XX:+UseStringDeduplication"
-                     ;; "-XX:FreqInlineSize=325"
-                     ;; "-XX:MaxInlineLevel=9"
-                     "-XX:+UseCompressedOops"))
-         (jvm-args (mapcar (lambda (arg) (concat "--jvm-arg=" arg)) jvm-args))
-         ;; tell jdtls the data directory and jvm args
-         (contact (append '("jdtls") jvm-args `("-data" ,data-dir))))
-    contact))
+	(let* ((jdtls-cache-dir (file-name-concat user-emacs-directory ".cache" "lsp-cache"))
+           (project-dir (file-name-nondirectory (directory-file-name (project-root (project-current)))))
+           (data-dir (expand-file-name (file-name-concat jdtls-cache-dir (md5 project-dir))))
+           (jvm-args `("-Xmx8G"
+                       ;; "-XX:+UseG1GC"
+                       "-XX:+UseZGC"
+                       "-XX:+UseStringDeduplication"
+                       ;; "-XX:FreqInlineSize=325"
+                       ;; "-XX:MaxInlineLevel=9"
+                       "-XX:+UseCompressedOops"))
+           (jvm-args (mapcar (lambda (arg) (concat "--jvm-arg=" arg)) jvm-args))
+           ;; tell jdtls the data directory and jvm args
+           (contact (append '("jdtls") jvm-args `("-data" ,data-dir))))
+      contact))
   :custom
   (eglot-events-buffer-config '(:size 0 :format full))
   (eglot-connect-timeout 10)
@@ -321,10 +321,11 @@
 (use-package racket-mode :straight t)
 (use-package rust-mode :straight t)
 (use-package scala-mode :straight t)
-(use-package slime
+(use-package sly
   :straight t
   :config
-  (setq inferior-lisp-program "sbcl"))
+  (setq inferior-lisp-program "ros run")
+  )
 (use-package typescript-mode :straight t)
 (use-package yaml-mode :straight t)
 (use-package zig-mode :straight t)
